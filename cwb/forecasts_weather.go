@@ -57,7 +57,7 @@ type ForecastTownshipsWeather struct {
 
 type FTWCountryLocation struct {
 	DatasetDescription string               `json:"datasetDescription"`
-	LocationsName      string               `json:"locationsName"`
+	LocationsName      *string              `json:"locationsName,omitempty"`
 	Dataid             string               `json:"dataid"`
 	Location           []FTWDatasetLocation `json:"location"`
 }
