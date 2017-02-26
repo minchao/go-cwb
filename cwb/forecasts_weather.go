@@ -12,7 +12,7 @@ const (
 	// Dataset Ids
 
 	// 36 hour weather forecasts
-	F36H = "F-C0032-001"
+	F36HW = "F-C0032-001"
 
 	// Townships forecasts
 	FTW2DayYilanCounty      = "F-D0047-001"
@@ -68,12 +68,12 @@ type Forecast36HourWeather struct {
 	Success string `json:"success"`
 	Result  Result `json:"result"`
 	Records struct {
-		DatasetDescription string                `json:"datasetDescription"`
-		Location           []F36HCountryLocation `json:"location"`
+		DatasetDescription string                 `json:"datasetDescription"`
+		Location           []F36HWCountryLocation `json:"location"`
 	} `json:"records"`
 }
 
-type F36HCountryLocation struct {
+type F36HWCountryLocation struct {
 	LocationName   string `json:"locationName"`
 	WeatherElement []struct {
 		ElementName string `json:"elementName"`
@@ -89,7 +89,7 @@ type F36HCountryLocation struct {
 	} `json:"weatherElement"`
 }
 
-type F36HTime struct {
+type F36HWTime struct {
 	StartTime string    `json:"startTime"`
 	EndTime   string    `json:"endTime"`
 	Parameter Parameter `json:"parameter"`
@@ -98,7 +98,7 @@ type F36HTime struct {
 // GetForecasts gets 36 hour weather forecasts.
 func (s *ForecastsService) Get36HourWeather(ctx context.Context, locations, elements []string) (*Forecast36HourWeather, *http.Response, error) {
 	forecast := new(Forecast36HourWeather)
-	req, err := s.client.Get(ctx, s.generateWeatherURL(F36H, locations, elements), forecast)
+	req, err := s.client.Get(ctx, s.generateWeatherURL(F36HW, locations, elements), forecast)
 	if err != nil {
 		return nil, nil, err
 	}
