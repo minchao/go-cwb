@@ -46,6 +46,37 @@ func testMethod(t *testing.T, r *http.Request, want string) {
 	}
 }
 
+type values map[string]string
+
+func testFormValues(t *testing.T, r *http.Request, values values) {
+	want := url.Values{}
+	for k, v := range values {
+		want.Add(k, v)
+	}
+
+	r.ParseForm()
+	if got := r.Form; !reflect.DeepEqual(got, want) {
+		t.Errorf("Request parameters is %v, want %v", got, want)
+	}
+}
+
+func areEqualJSON(j1, j2 []byte) (bool, error) {
+	var v1 interface{}
+	var v2 interface{}
+
+	var err error
+	err = json.Unmarshal(j1, &v1)
+	if err != nil {
+		return false, fmt.Errorf("Unmarshal JSON 1 error: %v", err)
+	}
+	err = json.Unmarshal(j2, &v2)
+	if err != nil {
+		return false, fmt.Errorf("Unmarshal JSON 2 error: %v", err)
+	}
+
+	return reflect.DeepEqual(v1, v2), nil
+}
+
 func TestNewClient(t *testing.T) {
 	c := NewClient("token", http.DefaultClient)
 
