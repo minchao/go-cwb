@@ -155,7 +155,7 @@ func TestClient_Do_noContent(t *testing.T) {
 	defer teardown()
 
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "")
+		w.WriteHeader(http.StatusNoContent)
 	})
 
 	var body json.RawMessage
@@ -164,5 +164,26 @@ func TestClient_Do_noContent(t *testing.T) {
 	_, err := client.Do(context.Background(), req, &body)
 	if err == nil {
 		t.Error("Expected empty body error.")
+	}
+}
+
+func Test_checkResponse(t *testing.T) {
+	res := &http.Response{
+		Request:    &http.Request{},
+		StatusCode: http.StatusNotFound,
+		Body:       ioutil.NopCloser(strings.NewReader("data not found")),
+	}
+	err := checkResponse(res).(*ErrorResponse)
+
+	if err == nil {
+		t.Error("Expected error response.")
+	}
+
+	want := &ErrorResponse{
+		Response: res,
+		Message:  "data not found",
+	}
+	if !reflect.DeepEqual(err, want) {
+		t.Errorf("Error is %v, want %v", err, want)
 	}
 }
