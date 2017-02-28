@@ -167,6 +167,20 @@ func TestClient_Do_noContent(t *testing.T) {
 	}
 }
 
+func TestClient_Do_contextWithCancel(t *testing.T) {
+	var body json.RawMessage
+
+	req, _ := client.NewRequest("GET", "/", nil)
+	req.URL = nil
+
+	ctx, cancel := context.WithCancel(context.Background())
+	cancel()
+	_, err := client.Do(ctx, req, &body)
+	if err != context.Canceled {
+		t.Logf("Expected context canceled error, got %v", err)
+	}
+}
+
 func Test_checkResponse(t *testing.T) {
 	res := &http.Response{
 		Request:    &http.Request{},
