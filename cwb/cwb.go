@@ -84,10 +84,12 @@ func (c *Client) NewRequest(method, urlStr string, body io.Reader) (*http.Reques
 
 // Do sends an API request, and returns the API response.
 func (c *Client) Do(ctx context.Context, req *http.Request, v interface{}) (*http.Response, error) {
+	req = req.WithContext(ctx)
+
 	resp, err := c.client.Do(req)
 	if err != nil {
 		// If we got an error, and the context has been canceled,
-		// the context's error is probably mor useful.
+		// the context's error is probably more useful.
 		select {
 		case <-ctx.Done():
 			return nil, ctx.Err()
