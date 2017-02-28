@@ -31,8 +31,8 @@ func setup() {
 
 	// CWB client configured to use test server
 	client = NewClient("token", nil)
-	url, _ := url.Parse(server.URL)
-	client.BaseURL = url
+	u, _ := url.Parse(server.URL)
+	client.BaseURL = u
 }
 
 // teardown closes the test HTTP server.
