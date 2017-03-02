@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"strings"
 	"testing"
 )
 
@@ -76,12 +77,13 @@ func TestForecastsService_GetTownshipsWeatherByLocations(t *testing.T) {
 	setup()
 	defer teardown()
 
+	locationIds := []string{FTW2DayPingtungCounty, FTW2DayChiayiCounty}
 	testdata, _ := ioutil.ReadFile(fmt.Sprintf("./testdata/%v.json", FTWTaiwan))
 
 	mux.HandleFunc(fmt.Sprintf("/api/v1/rest/datastore/%v", FTWTaiwan), func(w http.ResponseWriter, r *http.Request) {
 		testMethod(t, r, "GET")
 		testFormValues(t, r, values{
-			"locationId":   "F-D0047-033,F-D0047-031",
+			"locationId":   strings.Join(locationIds, ","),
 			"locationName": "恆春鎮,阿里山鄉",
 			"elementName":  "Wx,PoP,AT,T,CI,RH,WeatherDescription,PoP6h,Wind,Td",
 		})
@@ -91,7 +93,7 @@ func TestForecastsService_GetTownshipsWeatherByLocations(t *testing.T) {
 	})
 
 	got, _, err := client.Forecasts.GetTownshipsWeatherByLocations(context.Background(),
-		[]string{"F-D0047-033,F-D0047-031"},
+		locationIds,
 		[]string{"恆春鎮,阿里山鄉"},
 		[]string{"Wx,PoP,AT,T,CI,RH,WeatherDescription,PoP6h,Wind,Td"})
 	if err != nil {
