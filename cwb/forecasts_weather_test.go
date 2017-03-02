@@ -71,3 +71,36 @@ func TestForecastsService_GetTownshipsWeatherByDataId(t *testing.T) {
 		t.Error("Forecasts.GetTownshipsWeatherByDataId testdata and restored are not equal")
 	}
 }
+
+func TestForecastsService_GetTownshipsWeatherByLocations(t *testing.T) {
+	setup()
+	defer teardown()
+
+	testdata, _ := ioutil.ReadFile(fmt.Sprintf("./testdata/%v.json", FTWTaiwan))
+
+	mux.HandleFunc(fmt.Sprintf("/api/v1/rest/datastore/%v", FTWTaiwan), func(w http.ResponseWriter, r *http.Request) {
+		testMethod(t, r, "GET")
+		testFormValues(t, r, values{
+			"locationId":   "F-D0047-033,F-D0047-031",
+			"locationName": "恆春鎮,阿里山鄉",
+			"elementName":  "Wx,PoP,AT,T,CI,RH,WeatherDescription,PoP6h,Wind,Td",
+		})
+
+		w.WriteHeader(http.StatusOK)
+		w.Write(testdata)
+	})
+
+	got, _, err := client.Forecasts.GetTownshipsWeatherByLocations(context.Background(),
+		[]string{"F-D0047-033,F-D0047-031"},
+		[]string{"恆春鎮,阿里山鄉"},
+		[]string{"Wx,PoP,AT,T,CI,RH,WeatherDescription,PoP6h,Wind,Td"})
+	if err != nil {
+		t.Errorf("Forecasts.GetTownshipsWeatherByLocations returned error: %v", err)
+	}
+
+	restored, _ := json.Marshal(got)
+	areEqual, err := areEqualJSON(testdata, restored)
+	if !areEqual {
+		t.Error("Forecasts.GetTownshipsWeatherByLocations testdata and restored are not equal")
+	}
+}

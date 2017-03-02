@@ -61,6 +61,8 @@ const (
 
 	FTW2DayTaiwan = "F-D0047-089"
 	FTW7DayTaiwan = "F-D0047-091"
+
+	FTWTaiwan = "F-D0047-093"
 )
 
 type Forecast36HourWeather struct {
@@ -95,9 +97,9 @@ type F36HWTime struct {
 }
 
 // GetForecasts gets 36 hour weather forecasts.
-func (s *ForecastsService) Get36HourWeather(ctx context.Context, locations, elements []string) (*Forecast36HourWeather, *http.Response, error) {
+func (s *ForecastsService) Get36HourWeather(ctx context.Context, locationNames, elements []string) (*Forecast36HourWeather, *http.Response, error) {
 	forecast := new(Forecast36HourWeather)
-	req, err := s.client.Get(ctx, s.generateWeatherURL(F36HW, locations, elements), forecast)
+	req, err := s.client.Get(ctx, s.generateWeatherURL(F36HW, nil, locationNames, elements), forecast)
 	if err != nil {
 		return nil, nil, err
 	}
@@ -144,19 +146,32 @@ type FTWTime struct {
 
 // GetTownshipsWeatherByCity gets townships forecasts by data Id.
 // See http://opendata.cwb.gov.tw/datalist for dataId (F-D0047-001 - F-D0047-091).
-func (s *ForecastsService) GetTownshipsWeatherByDataId(ctx context.Context, dataId string, locations, elements []string) (*ForecastTownshipsWeather, *http.Response, error) {
+func (s *ForecastsService) GetTownshipsWeatherByDataId(ctx context.Context, dataId string, locationNames, elements []string) (*ForecastTownshipsWeather, *http.Response, error) {
 	forecast := new(ForecastTownshipsWeather)
-	req, err := s.client.Get(ctx, s.generateWeatherURL(dataId, locations, elements), forecast)
+	req, err := s.client.Get(ctx, s.generateWeatherURL(dataId, nil, locationNames, elements), forecast)
 	if err != nil {
 		return nil, nil, err
 	}
 	return forecast, req, nil
 }
 
-func (s *ForecastsService) generateWeatherURL(dataId string, locations, elements []string) string {
+// GetTownshipsWeatherByLocations gets townships forecasts by locationIds and locationNames.
+func (s *ForecastsService) GetTownshipsWeatherByLocations(ctx context.Context, locationIds, locationNames, elements []string) (*ForecastTownshipsWeather, *http.Response, error) {
+	forecast := new(ForecastTownshipsWeather)
+	req, err := s.client.Get(ctx, s.generateWeatherURL(FTWTaiwan, locationIds, locationNames, elements), forecast)
+	if err != nil {
+		return nil, nil, err
+	}
+	return forecast, req, nil
+}
+
+func (s *ForecastsService) generateWeatherURL(dataId string, locationIds, locationNames, elements []string) string {
 	q := url.Values{}
-	if len(locations) > 0 {
-		q.Set("locationName", strings.Join(locations, ","))
+	if len(locationIds) > 0 {
+		q.Set("locationId", strings.Join(locationIds, ","))
+	}
+	if len(locationNames) > 0 {
+		q.Set("locationName", strings.Join(locationNames, ","))
 	}
 	if len(elements) > 0 {
 		q.Set("elementName", strings.Join(elements, ","))
