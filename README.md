@@ -41,9 +41,6 @@ Get the 2 day townships weather forecasts by specific country:
 
 ```go
 forecast, _, err := client.Forecasts.GetTownshipsWeatherByDataId(context.Background(), cwb.FTW2DayTaipeiCity, nil, nil)
-if err != nil {
-    fmt.Println(err)
-}
 ```
 
 Get the 7 day township weather forecasts by specific locations and elements:
@@ -53,15 +50,13 @@ forecast, _, err := client.Forecasts.GetTownshipsWeatherByDataId(context.Backgro
     cwb.FTW7DayChiayiCity,
     []string{"阿里山鄉"},
     []string{"MinT", "MaxT", "WeatherDescription"})
-if err != nil {
-    fmt.Println(err)
-}
 ```
 
 ## Implemented APIs
 
 * 一般天氣預報-今明36小時天氣預報 (F-C0032-001)
 * 鄉鎮天氣預報-單一鄉鎮市區預報資料 (F-D0047-001 - F-D0047-091)
+* 鄉鎮天氣預報-全臺灣各鄉鎮市區預報資料 (F-D0047-093) 
 
 [CWB Open data API documentation](http://opendata.cwb.gov.tw/opendatadoc/CWB_Opendata_API_V1.1.pdf)
 
