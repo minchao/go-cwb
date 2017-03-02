@@ -10,7 +10,6 @@ import (
 
 const (
 	// Dataset Ids
-
 	// 36 hour weather forecasts
 	F36HW = "F-C0032-001"
 
@@ -81,7 +80,7 @@ type F36HWCountryLocation struct {
 			StartTime string `json:"startTime"`
 			EndTime   string `json:"endTime"`
 			Parameter struct {
-				ParameterName  string  `json:"paramterName"` // TODO Typo in CWB API
+				ParameterName  string  `json:"parameterName"`
 				ParameterValue *string `json:"parameterValue,omitempty"`
 				ParameterUnit  *string `json:"parameterUnit,omitempty"`
 			} `json:"parameter"`
