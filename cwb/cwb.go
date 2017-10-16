@@ -13,7 +13,7 @@ import (
 
 const (
 	libraryVersion   = "0.0.1"
-	defaultBaseURL   = "http://opendata.cwb.gov.tw/"
+	defaultBaseURL   = "https://opendata.cwb.gov.tw/"
 	defaultUserAgent = "go-cwb/" + libraryVersion
 )
 
