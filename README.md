@@ -58,7 +58,7 @@ forecast, _, err := client.Forecasts.GetTownshipsWeatherByDataId(context.Backgro
 * 鄉鎮天氣預報-單一鄉鎮市區預報資料 (F-D0047-001 - F-D0047-091)
 * 鄉鎮天氣預報-全臺灣各鄉鎮市區預報資料 (F-D0047-093) 
 
-[CWB Open data API documentation](http://opendata.cwb.gov.tw/opendatadoc/CWB_Opendata_API_V1.1.pdf)
+[CWB Open data API documentation Version 1.2](http://opendata.cwb.gov.tw/opendatadoc/CWB_Opendata_API_V1.2.pdf)
 
 ## License
 
