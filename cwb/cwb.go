@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"net/url"
 )
@@ -39,9 +38,6 @@ type Client struct {
 // NewClient returns a new CWB API client. The token are required for authentication.
 // If a nil httpClient is provided, http.DefaultClient will be used.
 func NewClient(token string, httpClient *http.Client) *Client {
-	if token == "" {
-		log.Fatal("token cannot be empty")
-	}
 	if httpClient == nil {
 		httpClient = http.DefaultClient
 	}
