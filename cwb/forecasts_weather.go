@@ -2,7 +2,6 @@ package cwb
 
 import (
 	"context"
-	"fmt"
 	"net/http"
 	"net/url"
 	"strings"
@@ -99,7 +98,7 @@ type F36HWTime struct {
 // GetForecasts gets 36 hour weather forecasts.
 func (s *ForecastsService) Get36HourWeather(ctx context.Context, locationNames, elements []string) (*Forecast36HourWeather, *http.Response, error) {
 	forecast := new(Forecast36HourWeather)
-	req, err := s.client.Get(ctx, s.generateWeatherURL(F36HW, nil, locationNames, elements), forecast)
+	req, err := s.client.Get(ctx, s.generateURL(F36HW, nil, locationNames, elements), forecast)
 	if err != nil {
 		return nil, nil, err
 	}
@@ -148,7 +147,7 @@ type FTWTime struct {
 // See http://opendata.cwb.gov.tw/datalist for dataId (F-D0047-001 - F-D0047-091).
 func (s *ForecastsService) GetTownshipsWeatherByDataId(ctx context.Context, dataId string, locationNames, elements []string) (*ForecastTownshipsWeather, *http.Response, error) {
 	forecast := new(ForecastTownshipsWeather)
-	req, err := s.client.Get(ctx, s.generateWeatherURL(dataId, nil, locationNames, elements), forecast)
+	req, err := s.client.Get(ctx, s.generateURL(dataId, nil, locationNames, elements), forecast)
 	if err != nil {
 		return nil, nil, err
 	}
@@ -158,14 +157,14 @@ func (s *ForecastsService) GetTownshipsWeatherByDataId(ctx context.Context, data
 // GetTownshipsWeatherByLocations gets townships forecasts by locationIds and locationNames.
 func (s *ForecastsService) GetTownshipsWeatherByLocations(ctx context.Context, locationIds, locationNames, elements []string) (*ForecastTownshipsWeather, *http.Response, error) {
 	forecast := new(ForecastTownshipsWeather)
-	req, err := s.client.Get(ctx, s.generateWeatherURL(FTWTaiwan, locationIds, locationNames, elements), forecast)
+	req, err := s.client.Get(ctx, s.generateURL(FTWTaiwan, locationIds, locationNames, elements), forecast)
 	if err != nil {
 		return nil, nil, err
 	}
 	return forecast, req, nil
 }
 
-func (s *ForecastsService) generateWeatherURL(dataId string, locationIds, locationNames, elements []string) string {
+func (s *ForecastsService) generateURL(dataId string, locationIds, locationNames, elements []string) string {
 	q := url.Values{}
 	if len(locationIds) > 0 {
 		q.Set("locationId", strings.Join(locationIds, ","))
@@ -176,7 +175,5 @@ func (s *ForecastsService) generateWeatherURL(dataId string, locationIds, locati
 	if len(elements) > 0 {
 		q.Set("elementName", strings.Join(elements, ","))
 	}
-	u, _ := url.Parse(fmt.Sprintf("api/v1/rest/datastore/%v", dataId))
-	u.RawQuery = q.Encode()
-	return u.String()
+	return s.client.generateURL(dataId, q)
 }
