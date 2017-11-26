@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	// Dataset Ids
+	// Data set Ids
 	// 36 hour weather forecasts
 	F36HW = "F-C0032-001"
 

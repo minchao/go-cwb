@@ -31,8 +31,9 @@ type Client struct {
 	common service // Reuse a single struct instead of allocating one for each service on the heap.
 
 	// Services
-	Dataset   *DatasetService
-	Forecasts *ForecastsService
+	Dataset    *DatasetService
+	Forecasts  *ForecastsService
+	StationObs *StationObsService
 }
 
 // NewClient returns a new CWB API client. The token are required for authentication.
@@ -53,6 +54,7 @@ func NewClient(token string, httpClient *http.Client) *Client {
 	c.common.client = c
 	c.Dataset = (*DatasetService)(&c.common)
 	c.Forecasts = (*ForecastsService)(&c.common)
+	c.StationObs = (*StationObsService)(&c.common)
 	return c
 }
 
@@ -117,6 +119,12 @@ func (c *Client) Get(ctx context.Context, url string, v interface{}) (*http.Resp
 		return nil, err
 	}
 	return c.Do(ctx, req, v)
+}
+
+func (s *Client) generateURL(dataId string, options url.Values) string {
+	u, _ := url.Parse(fmt.Sprintf("api/v1/rest/datastore/%v", dataId))
+	u.RawQuery = options.Encode()
+	return u.String()
 }
 
 // ErrorResponse reports error caused by an API request.

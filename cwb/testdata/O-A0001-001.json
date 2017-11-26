@@ -1,0 +1,121 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "O-A0001-001",
+    "fields": [
+      {
+        "id": "lat",
+        "type": "Double"
+      },
+      {
+        "id": "lon",
+        "type": "Double"
+      },
+      {
+        "id": "locationName",
+        "type": "String"
+      },
+      {
+        "id": "stationId",
+        "type": "String"
+      },
+      {
+        "id": "obsTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "elementName",
+        "type": "String"
+      },
+      {
+        "id": "elementValue",
+        "type": "Double"
+      },
+      {
+        "id": "parameterName",
+        "type": "String"
+      },
+      {
+        "id": "parameterValue",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "location": [
+      {
+        "lat": "24.144778",
+        "lon": "121.264083",
+        "locationName": "合歡山",
+        "stationId": "C0H9C0",
+        "time": {
+          "obsTime": "2017-11-26 20:00:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "3402.0"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "326"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "0.5"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "5.9"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "0.99"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "681.1"
+          },
+          {
+            "elementName": "SUN",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_24R",
+            "elementValue": "4.0"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "南投縣"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "13"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "仁愛鄉"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "122"
+          }
+        ]
+      }
+    ]
+  }
+}
