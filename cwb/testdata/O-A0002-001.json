@@ -1,0 +1,178 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "O-A0002-001",
+    "fields": [
+      {
+        "id": "lat",
+        "type": "Double"
+      },
+      {
+        "id": "lon",
+        "type": "Double"
+      },
+      {
+        "id": "locationName",
+        "type": "String"
+      },
+      {
+        "id": "stationId",
+        "type": "String"
+      },
+      {
+        "id": "obsTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "elementName",
+        "type": "String"
+      },
+      {
+        "id": "elementValue",
+        "type": "Double"
+      },
+      {
+        "id": "parameterName",
+        "type": "String"
+      },
+      {
+        "id": "parameterValue",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "location": [
+      {
+        "lat": "24.1463",
+        "lon": "121.2682",
+        "locationName": "合歡山",
+        "stationId": "A0Z080",
+        "time": {
+          "obsTime": "2017-11-26 20:50:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "3171.00"
+          },
+          {
+            "elementName": "RAIN",
+            "elementValue": "1.50"
+          },
+          {
+            "elementName": "MIN_10",
+            "elementValue": "0.00"
+          },
+          {
+            "elementName": "HOUR_3",
+            "elementValue": "1.50"
+          },
+          {
+            "elementName": "HOUR_6",
+            "elementValue": "1.50"
+          },
+          {
+            "elementName": "HOUR_12",
+            "elementValue": "2.00"
+          },
+          {
+            "elementName": "HOUR_24",
+            "elementValue": "4.50"
+          },
+          {
+            "elementName": "NOW",
+            "elementValue": "4.50"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "花蓮縣"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "21"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "秀林鄉"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "108"
+          },
+          {
+            "parameterName": "ATTRIBUTE",
+            "parameterValue": "局屬合作測站"
+          }
+        ]
+      },
+      {
+        "lat": "24.1448",
+        "lon": "121.2641",
+        "locationName": "合歡山",
+        "stationId": "C0H9C0",
+        "time": {
+          "obsTime": "2017-11-26 20:50:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "3402.00"
+          },
+          {
+            "elementName": "RAIN",
+            "elementValue": "2.00"
+          },
+          {
+            "elementName": "MIN_10",
+            "elementValue": "0.00"
+          },
+          {
+            "elementName": "HOUR_3",
+            "elementValue": "2.00"
+          },
+          {
+            "elementName": "HOUR_6",
+            "elementValue": "2.00"
+          },
+          {
+            "elementName": "HOUR_12",
+            "elementValue": "2.50"
+          },
+          {
+            "elementName": "HOUR_24",
+            "elementValue": "5.50"
+          },
+          {
+            "elementName": "NOW",
+            "elementValue": "5.50"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "南投縣"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "13"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "仁愛鄉"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "122"
+          },
+          {
+            "parameterName": "ATTRIBUTE",
+            "parameterValue": "局屬無人測站"
+          }
+        ]
+      }
+    ]
+  }
+}

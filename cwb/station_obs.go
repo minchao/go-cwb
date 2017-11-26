@@ -10,17 +10,22 @@ const (
 	// Data set Ids
 	// Weather observation data
 	StationObsWeatherId = "O-A0001-001"
+
+	// Rainfall observation data
+	StationObsRainfallId = "O-A0002-001"
 )
 
 type StationObsService service
 
-type StationObsWeather struct {
+type StationObsResponse struct {
 	Success string `json:"success"`
 	Result  Result `json:"result"`
 	Records struct {
 		Location []StationObsLocation `json:"location"`
 	} `json:"records"`
 }
+
+type StationObsWeather StationObsResponse
 
 type StationObsLocation struct {
 	Lat          string `json:"lat"`
@@ -43,6 +48,18 @@ type StationObsElement struct {
 func (s *StationObsService) GetWeather(ctx context.Context, options url.Values) (*StationObsWeather, *http.Response, error) {
 	obs := new(StationObsWeather)
 	req, err := s.client.Get(ctx, s.client.generateURL(StationObsWeatherId, options), obs)
+	if err != nil {
+		return nil, nil, err
+	}
+	return obs, req, nil
+}
+
+type StationObsRainfall StationObsResponse
+
+// GetRainfall gets rainfall observation data.
+func (s *StationObsService) GetRainfall(ctx context.Context, options url.Values) (*StationObsRainfall, *http.Response, error) {
+	obs := new(StationObsRainfall)
+	req, err := s.client.Get(ctx, s.client.generateURL(StationObsRainfallId, options), obs)
 	if err != nil {
 		return nil, nil, err
 	}
