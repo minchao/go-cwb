@@ -121,7 +121,7 @@ func (c *Client) Get(ctx context.Context, url string, v interface{}) (*http.Resp
 	return c.Do(ctx, req, v)
 }
 
-func (s *Client) generateURL(dataId string, options url.Values) string {
+func (c *Client) generateURL(dataId string, options url.Values) string {
 	u, _ := url.Parse(fmt.Sprintf("api/v1/rest/datastore/%v", dataId))
 	u.RawQuery = options.Encode()
 	return u.String()
