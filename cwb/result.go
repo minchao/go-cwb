@@ -1,7 +1,7 @@
 package cwb
 
 type Result struct {
-	ResourceId string   `json:"resource_id"`
+	ResourceId *string  `json:"resource_id,omitempty"`
 	Fields     []Fields `json:"fields"`
 }
 

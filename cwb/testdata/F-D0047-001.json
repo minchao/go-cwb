@@ -4,11 +4,11 @@
     "resource_id": "F-D0047-001",
     "fields": [
       {
-        "id": "dataid",
+        "id": "contentDescription",
         "type": "String"
       },
       {
-        "id": "geocode",
+        "id": "datasetDescription",
         "type": "String"
       },
       {
@@ -16,47 +16,31 @@
         "type": "String"
       },
       {
+        "id": "dataid",
+        "type": "String"
+      },
+      {
         "id": "locationName",
         "type": "String"
       },
       {
+        "id": "geocode",
+        "type": "Double"
+      },
+      {
         "id": "lat",
-        "type": "Float"
+        "type": "Double"
       },
       {
         "id": "lon",
-        "type": "Float"
-      },
-      {
-        "id": "datasetDescription",
-        "type": "String"
-      },
-      {
-        "id": "datasetLanguage",
-        "type": "String"
+        "type": "Double"
       },
       {
         "id": "elementName",
         "type": "String"
       },
       {
-        "id": "elementValue",
-        "type": "String"
-      },
-      {
-        "id": "elementMeasure",
-        "type": "String"
-      },
-      {
-        "id": "parameterName",
-        "type": "String"
-      },
-      {
-        "id": "parameterValue",
-        "type": "String"
-      },
-      {
-        "id": "parameterUnit",
+        "id": "description",
         "type": "String"
       },
       {
@@ -70,772 +54,811 @@
       {
         "id": "dataTime",
         "type": "Timestamp"
+      },
+      {
+        "id": "value",
+        "type": "String"
+      },
+      {
+        "id": "measures",
+        "type": "String"
       }
     ]
   },
   "records": {
-    "contentDescription": "臺灣各鄉鎮市區未來2天(逐3小時)及未來1週天氣預報",
     "locations": [
       {
-        "datasetDescription": "宜蘭縣未來2天天氣預報",
+        "datasetDescription": "臺灣各縣市鄉鎮未來3天(72小時)逐3小時天氣預報",
         "locationsName": "宜蘭縣",
         "dataid": "D0047-001",
         "location": [
           {
             "locationName": "羅東鎮",
             "geocode": "1000202",
-            "lat": "24.6787",
-            "lon": "121.759",
+            "lat": "24.678673",
+            "lon": "121.758763",
             "weatherElement": [
               {
                 "elementName": "Wx",
+                "description": "天氣現象",
                 "time": [
                   {
-                    "startTime": "2017-02-27 21:00:00",
-                    "endTime": "2017-02-28 00:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-04 12:00:00",
+                    "endTime": "2018-11-04 15:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "陰",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "03",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-03-02 00:00:00",
-                    "endTime": "2017-03-02 03:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-04 15:00:00",
+                    "endTime": "2018-11-04 18:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "陰",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "03",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-28 06:00:00",
-                    "endTime": "2017-02-28 09:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-04 18:00:00",
+                    "endTime": "2018-11-04 21:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "多雲",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "02",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-28 15:00:00",
-                    "endTime": "2017-02-28 18:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-04 21:00:00",
+                    "endTime": "2018-11-05 00:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-03-01 00:00:00",
-                    "endTime": "2017-03-01 03:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-05 00:00:00",
+                    "endTime": "2018-11-05 03:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-27 06:00:00",
-                    "endTime": "2017-02-27 09:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-05 03:00:00",
+                    "endTime": "2018-11-05 06:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-28 12:00:00",
-                    "endTime": "2017-02-28 15:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-05 06:00:00",
+                    "endTime": "2018-11-05 09:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-28 21:00:00",
-                    "endTime": "2017-03-01 00:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-05 09:00:00",
+                    "endTime": "2018-11-05 12:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-27 12:00:00",
-                    "endTime": "2017-02-27 15:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-05 12:00:00",
+                    "endTime": "2018-11-05 15:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-03-01 06:00:00",
-                    "endTime": "2017-03-01 09:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-05 15:00:00",
+                    "endTime": "2018-11-05 18:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-03-01 15:00:00",
-                    "endTime": "2017-03-01 18:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-05 18:00:00",
+                    "endTime": "2018-11-05 21:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-03-01 03:00:00",
-                    "endTime": "2017-03-01 06:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-05 21:00:00",
+                    "endTime": "2018-11-06 00:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-27 09:00:00",
-                    "endTime": "2017-02-27 12:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-06 00:00:00",
+                    "endTime": "2018-11-06 03:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-03-01 12:00:00",
-                    "endTime": "2017-03-01 15:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-06 03:00:00",
+                    "endTime": "2018-11-06 06:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-27 18:00:00",
-                    "endTime": "2017-02-27 21:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-06 06:00:00",
+                    "endTime": "2018-11-06 09:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-03-01 21:00:00",
-                    "endTime": "2017-03-02 00:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-06 09:00:00",
+                    "endTime": "2018-11-06 12:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-28 03:00:00",
-                    "endTime": "2017-02-28 06:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-06 12:00:00",
+                    "endTime": "2018-11-06 15:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-03-01 09:00:00",
-                    "endTime": "2017-03-01 12:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-06 15:00:00",
+                    "endTime": "2018-11-06 18:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-27 15:00:00",
-                    "endTime": "2017-02-27 18:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-06 18:00:00",
+                    "endTime": "2018-11-06 21:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-03-01 18:00:00",
-                    "endTime": "2017-03-01 21:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-06 21:00:00",
+                    "endTime": "2018-11-07 00:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-28 00:00:00",
-                    "endTime": "2017-02-28 03:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-07 00:00:00",
+                    "endTime": "2018-11-07 03:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-03-02 03:00:00",
-                    "endTime": "2017-03-02 06:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-07 03:00:00",
+                    "endTime": "2018-11-07 06:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-28 09:00:00",
-                    "endTime": "2017-02-28 12:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-07 06:00:00",
+                    "endTime": "2018-11-07 09:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
                   },
                   {
-                    "startTime": "2017-02-28 18:00:00",
-                    "endTime": "2017-02-28 21:00:00",
-                    "elementValue": "短暫雨",
-                    "parameter": [
+                    "startTime": "2018-11-07 09:00:00",
+                    "endTime": "2018-11-07 12:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "天氣圖示代碼",
-                        "parameterValue": "26"
+                        "value": "短暫雨",
+                        "measures": "自定義 Wx 文字"
+                      },
+                      {
+                        "value": "26",
+                        "measures": "自定義 Wx 單位"
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "elementName": "PoP",
-                "elementMeasure": "%",
-                "time": [
-                  {
-                    "startTime": "2017-02-28 06:00:00",
-                    "endTime": "2017-02-28 18:00:00",
-                    "elementValue": "70"
-                  },
-                  {
-                    "startTime": "2017-02-27 18:00:00",
-                    "endTime": "2017-02-28 06:00:00",
-                    "elementValue": "80"
-                  },
-                  {
-                    "startTime": "2017-02-27 06:00:00",
-                    "endTime": "2017-02-27 18:00:00",
-                    "elementValue": "80"
-                  },
-                  {
-                    "startTime": "2017-03-01 18:00:00",
-                    "endTime": "2017-03-02 06:00:00",
-                    "elementValue": "30"
-                  },
-                  {
-                    "startTime": "2017-03-01 06:00:00",
-                    "endTime": "2017-03-01 18:00:00",
-                    "elementValue": "30"
-                  },
-                  {
-                    "startTime": "2017-02-28 18:00:00",
-                    "endTime": "2017-03-01 06:00:00",
-                    "elementValue": "60"
                   }
                 ]
               },
               {
                 "elementName": "AT",
-                "elementMeasure": "C",
+                "description": "體感溫度",
                 "time": [
                   {
-                    "dataTime": "2017-03-01 15:00:00",
-                    "elementValue": "21"
+                    "dataTime": "2018-11-04 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "32",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 18:00:00",
-                    "elementValue": "17"
+                    "dataTime": "2018-11-04 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "30",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 21:00:00",
-                    "elementValue": "15"
+                    "dataTime": "2018-11-04 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "28",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 21:00:00",
-                    "elementValue": "16"
+                    "dataTime": "2018-11-04 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 00:00:00",
-                    "elementValue": "15"
+                    "dataTime": "2018-11-05 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "25",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 18:00:00",
-                    "elementValue": "16"
+                    "dataTime": "2018-11-05 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "24",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 09:00:00",
-                    "elementValue": "18"
+                    "dataTime": "2018-11-05 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "24",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 12:00:00",
-                    "elementValue": "18"
+                    "dataTime": "2018-11-05 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "27",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 12:00:00",
-                    "elementValue": "18"
+                    "dataTime": "2018-11-05 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "31",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 15:00:00",
-                    "elementValue": "18"
+                    "dataTime": "2018-11-05 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "31",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 09:00:00",
-                    "elementValue": "16"
+                    "dataTime": "2018-11-05 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "28",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 12:00:00",
-                    "elementValue": "16"
+                    "dataTime": "2018-11-05 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-02 00:00:00",
-                    "elementValue": "10"
+                    "dataTime": "2018-11-06 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 03:00:00",
-                    "elementValue": "15"
+                    "dataTime": "2018-11-06 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "25",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-02 03:00:00",
-                    "elementValue": "15"
+                    "dataTime": "2018-11-06 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "24",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 15:00:00",
-                    "elementValue": "16"
+                    "dataTime": "2018-11-06 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "29",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 06:00:00",
-                    "elementValue": "14"
+                    "dataTime": "2018-11-06 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "33",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 00:00:00",
-                    "elementValue": "16"
+                    "dataTime": "2018-11-06 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "32",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 03:00:00",
-                    "elementValue": "15"
+                    "dataTime": "2018-11-06 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "29",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 06:00:00",
-                    "elementValue": "14"
+                    "dataTime": "2018-11-06 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 18:00:00",
-                    "elementValue": "15"
+                    "dataTime": "2018-11-07 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 06:00:00",
-                    "elementValue": "14"
+                    "dataTime": "2018-11-07 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "25",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 09:00:00",
-                    "elementValue": "15"
+                    "dataTime": "2018-11-07 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "25",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 21:00:00",
-                    "elementValue": "16"
+                    "dataTime": "2018-11-07 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "30",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   }
                 ]
               },
               {
                 "elementName": "T",
-                "elementMeasure": "C",
+                "description": "溫度",
                 "time": [
                   {
-                    "dataTime": "2017-03-01 15:00:00",
-                    "elementValue": "20"
-                  },
-                  {
-                    "dataTime": "2017-02-28 18:00:00",
-                    "elementValue": "17"
-                  },
-                  {
-                    "dataTime": "2017-02-27 21:00:00",
-                    "elementValue": "15"
-                  },
-                  {
-                    "dataTime": "2017-02-28 21:00:00",
-                    "elementValue": "16"
-                  },
-                  {
-                    "dataTime": "2017-02-28 00:00:00",
-                    "elementValue": "15"
-                  },
-                  {
-                    "dataTime": "2017-02-27 18:00:00",
-                    "elementValue": "15"
-                  },
-                  {
-                    "dataTime": "2017-03-01 09:00:00",
-                    "elementValue": "17"
-                  },
-                  {
-                    "dataTime": "2017-02-28 12:00:00",
-                    "elementValue": "18"
-                  },
-                  {
-                    "dataTime": "2017-03-01 12:00:00",
-                    "elementValue": "20"
-                  },
-                  {
-                    "dataTime": "2017-02-28 15:00:00",
-                    "elementValue": "18"
-                  },
-                  {
-                    "dataTime": "2017-02-28 09:00:00",
-                    "elementValue": "16"
-                  },
-                  {
-                    "dataTime": "2017-02-27 12:00:00",
-                    "elementValue": "16"
-                  },
-                  {
-                    "dataTime": "2017-03-02 00:00:00",
-                    "elementValue": "15"
-                  },
-                  {
-                    "dataTime": "2017-03-01 03:00:00",
-                    "elementValue": "15"
-                  },
-                  {
-                    "dataTime": "2017-02-27 15:00:00",
-                    "elementValue": "16"
-                  },
-                  {
-                    "dataTime": "2017-03-02 03:00:00",
-                    "elementValue": "14"
-                  },
-                  {
-                    "dataTime": "2017-03-01 06:00:00",
-                    "elementValue": "15"
-                  },
-                  {
-                    "dataTime": "2017-03-01 00:00:00",
-                    "elementValue": "15"
-                  },
-                  {
-                    "dataTime": "2017-02-28 03:00:00",
-                    "elementValue": "15"
-                  },
-                  {
-                    "dataTime": "2017-03-01 18:00:00",
-                    "elementValue": "18"
-                  },
-                  {
-                    "dataTime": "2017-02-27 06:00:00",
-                    "elementValue": "14"
-                  },
-                  {
-                    "dataTime": "2017-02-28 06:00:00",
-                    "elementValue": "14"
-                  },
-                  {
-                    "dataTime": "2017-02-27 09:00:00",
-                    "elementValue": "15"
-                  },
-                  {
-                    "dataTime": "2017-03-01 21:00:00",
-                    "elementValue": "16"
-                  }
-                ]
-              },
-              {
-                "elementName": "CI",
-                "time": [
-                  {
-                    "dataTime": "2017-03-01 15:00:00",
-                    "elementValue": "19.1",
-                    "parameter": [
+                    "dataTime": "2018-11-04 12:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "稍有寒意"
+                        "value": "27",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 18:00:00",
-                    "elementValue": "16.7",
-                    "parameter": [
+                    "dataTime": "2018-11-04 15:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "稍有寒意"
+                        "value": "26",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-27 21:00:00",
-                    "elementValue": "14.9",
-                    "parameter": [
+                    "dataTime": "2018-11-04 18:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "24",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 21:00:00",
-                    "elementValue": "15.9",
-                    "parameter": [
+                    "dataTime": "2018-11-04 21:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "23",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 00:00:00",
-                    "elementValue": "14.9",
-                    "parameter": [
+                    "dataTime": "2018-11-05 00:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "23",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-27 18:00:00",
-                    "elementValue": "14.9",
-                    "parameter": [
+                    "dataTime": "2018-11-05 03:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "22",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-01 09:00:00",
-                    "elementValue": "16.7",
-                    "parameter": [
+                    "dataTime": "2018-11-05 06:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "稍有寒意"
+                        "value": "22",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 12:00:00",
-                    "elementValue": "17.5",
-                    "parameter": [
+                    "dataTime": "2018-11-05 09:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "稍有寒意"
+                        "value": "25",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-01 12:00:00",
-                    "elementValue": "19.1",
-                    "parameter": [
+                    "dataTime": "2018-11-05 12:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "稍有寒意"
+                        "value": "27",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 15:00:00",
-                    "elementValue": "17.6",
-                    "parameter": [
+                    "dataTime": "2018-11-05 15:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "稍有寒意"
+                        "value": "27",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 09:00:00",
-                    "elementValue": "15.7",
-                    "parameter": [
+                    "dataTime": "2018-11-05 18:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "25",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-27 12:00:00",
-                    "elementValue": "15.8",
-                    "parameter": [
+                    "dataTime": "2018-11-05 21:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "23",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-02 00:00:00",
-                    "elementValue": "14.9",
-                    "parameter": [
+                    "dataTime": "2018-11-06 00:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "23",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-01 03:00:00",
-                    "elementValue": "14.9",
-                    "parameter": [
+                    "dataTime": "2018-11-06 03:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "22",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-27 15:00:00",
-                    "elementValue": "15.8",
-                    "parameter": [
+                    "dataTime": "2018-11-06 06:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "22",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-02 03:00:00",
-                    "elementValue": "14.0",
-                    "parameter": [
+                    "dataTime": "2018-11-06 09:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "25",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-01 06:00:00",
-                    "elementValue": "14.9",
-                    "parameter": [
+                    "dataTime": "2018-11-06 12:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "28",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-01 00:00:00",
-                    "elementValue": "15.0",
-                    "parameter": [
+                    "dataTime": "2018-11-06 15:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "28",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 03:00:00",
-                    "elementValue": "14.9",
-                    "parameter": [
+                    "dataTime": "2018-11-06 18:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "25",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-01 18:00:00",
-                    "elementValue": "17.5",
-                    "parameter": [
+                    "dataTime": "2018-11-06 21:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "稍有寒意"
+                        "value": "24",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-27 06:00:00",
-                    "elementValue": "14.0",
-                    "parameter": [
+                    "dataTime": "2018-11-07 00:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "23",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 06:00:00",
-                    "elementValue": "14.0",
-                    "parameter": [
+                    "dataTime": "2018-11-07 03:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "22",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-27 09:00:00",
-                    "elementValue": "14.9",
-                    "parameter": [
+                    "dataTime": "2018-11-07 06:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "22",
+                        "measures": "攝氏度"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-01 21:00:00",
-                    "elementValue": "15.8",
-                    "parameter": [
+                    "dataTime": "2018-11-07 09:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "舒適度描述",
-                        "parameterValue": "寒冷"
+                        "value": "26",
+                        "measures": "攝氏度"
                       }
                     ]
                   }
@@ -843,897 +866,911 @@
               },
               {
                 "elementName": "RH",
-                "elementMeasure": "%",
+                "description": "相對濕度",
                 "time": [
                   {
-                    "dataTime": "2017-03-01 15:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-04 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "94",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 18:00:00",
-                    "elementValue": "86"
+                    "dataTime": "2018-11-04 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "93",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 21:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-04 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "94",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 21:00:00",
-                    "elementValue": "88"
+                    "dataTime": "2018-11-04 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "94",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 00:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-05 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "95",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 18:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-05 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "97",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 09:00:00",
-                    "elementValue": "83"
+                    "dataTime": "2018-11-05 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "94",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 12:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-05 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "82",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 12:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-05 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "84",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 15:00:00",
-                    "elementValue": "83"
+                    "dataTime": "2018-11-05 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "95",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 09:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-05 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "98",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 12:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-05 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "98",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-02 00:00:00",
-                    "elementValue": "84"
+                    "dataTime": "2018-11-06 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "98",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 03:00:00",
-                    "elementValue": "90"
+                    "dataTime": "2018-11-06 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "98",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 15:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-06 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "98",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-02 03:00:00",
-                    "elementValue": "81"
+                    "dataTime": "2018-11-06 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "98",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 06:00:00",
-                    "elementValue": "87"
+                    "dataTime": "2018-11-06 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "94",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 00:00:00",
-                    "elementValue": "90"
+                    "dataTime": "2018-11-06 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "92",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 03:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-06 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "94",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 06:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-06 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "96",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 18:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-07 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "96",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 06:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-07 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "97",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 09:00:00",
-                    "elementValue": "80"
+                    "dataTime": "2018-11-07 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "98",
+                        "measures": "百分比"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 21:00:00",
-                    "elementValue": "85"
+                    "dataTime": "2018-11-07 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "97",
+                        "measures": "百分比"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "elementName": "CI",
+                "description": "舒適度指數",
+                "time": [
+                  {
+                    "dataTime": "2018-11-04 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "27",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "悶熱",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-04 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "悶熱",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-04 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "24",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-04 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "23",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-05 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-05 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-05 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "21",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-05 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "24",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-05 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "悶熱",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-05 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "悶熱",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-05 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "24",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-05 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "23",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-06 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "23",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-06 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-06 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-06 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "25",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-06 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "28",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "悶熱",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-06 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "27",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "悶熱",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-06 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "25",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-06 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "23",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-07 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "23",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-07 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-07 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
+                  },
+                  {
+                    "dataTime": "2018-11-07 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "NA"
+                      },
+                      {
+                        "value": "舒適",
+                        "measures": "自定義 CI 文字"
+                      }
+                    ]
                   }
                 ]
               },
               {
                 "elementName": "WeatherDescription",
+                "description": "天氣預報綜合描述",
                 "time": [
                   {
-                    "startTime": "2017-02-27 21:00:00",
-                    "endTime": "2017-02-28 00:00:00",
-                    "elementValue": "短暫雨。 降雨機率 80%。 溫度攝氏15度。 寒冷。 偏西風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-04 12:00:00",
+                    "endTime": "2018-11-04 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "陰。降雨機率 20%。溫度攝氏27度。悶熱。東北風 平均風速<= 1級(每秒2公尺)。相對濕度94%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-03-02 00:00:00",
-                    "endTime": "2017-03-02 03:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏15度。 寒冷。 偏北風 平均風速4至5級(每秒9公尺)。 相對濕度為84%。"
+                    "startTime": "2018-11-04 15:00:00",
+                    "endTime": "2018-11-04 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "陰。降雨機率 20%。溫度攝氏26度。悶熱。東北風 平均風速<= 1級(每秒1公尺)。相對濕度93%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-28 06:00:00",
-                    "endTime": "2017-02-28 09:00:00",
-                    "elementValue": "短暫雨。 降雨機率 70%。 溫度攝氏14度。 寒冷。 偏北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-04 18:00:00",
+                    "endTime": "2018-11-04 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 50%。溫度攝氏24度。舒適。西北風 平均風速<= 1級(每秒1公尺)。相對濕度94%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-28 15:00:00",
-                    "endTime": "2017-02-28 18:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏18度。 稍有寒意。 偏北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為83%。"
+                    "startTime": "2018-11-04 21:00:00",
+                    "endTime": "2018-11-05 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 50%。溫度攝氏23度。舒適。偏西風 平均風速<= 1級(每秒2公尺)。相對濕度94%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-03-01 00:00:00",
-                    "endTime": "2017-03-01 03:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏15度。 寒冷。 東北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為90%。"
+                    "startTime": "2018-11-05 00:00:00",
+                    "endTime": "2018-11-05 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 40%。溫度攝氏23度。舒適。偏西風 平均風速<= 1級(每秒2公尺)。相對濕度95%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-27 06:00:00",
-                    "endTime": "2017-02-27 09:00:00",
-                    "elementValue": "短暫雨。 降雨機率 80%。 溫度攝氏14度。 寒冷。 偏西風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-05 03:00:00",
+                    "endTime": "2018-11-05 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 40%。溫度攝氏22度。舒適。偏西風 平均風速<= 1級(每秒1公尺)。相對濕度97%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-28 12:00:00",
-                    "endTime": "2017-02-28 15:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏18度。 稍有寒意。 東北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-05 06:00:00",
+                    "endTime": "2018-11-05 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 60%。溫度攝氏22度。舒適。偏西風 平均風速<= 1級(每秒1公尺)。相對濕度94%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-28 21:00:00",
-                    "endTime": "2017-03-01 00:00:00",
-                    "elementValue": "短暫雨。 降雨機率 60%。 溫度攝氏16度。 寒冷。 東北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為88%。"
+                    "startTime": "2018-11-05 09:00:00",
+                    "endTime": "2018-11-05 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 60%。溫度攝氏25度。舒適。東北風 平均風速<= 1級(每秒1公尺)。相對濕度82%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-27 12:00:00",
-                    "endTime": "2017-02-27 15:00:00",
-                    "elementValue": "短暫雨。 降雨機率 80%。 溫度攝氏16度。 寒冷。 東北風 平均風速1至2級(每秒2公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-05 12:00:00",
+                    "endTime": "2018-11-05 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 60%。溫度攝氏27度。悶熱。東北風 平均風速<= 1級(每秒1公尺)。相對濕度84%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-03-01 06:00:00",
-                    "endTime": "2017-03-01 09:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏15度。 寒冷。 東北風 平均風速1至2級(每秒2公尺)。 相對濕度為87%。"
+                    "startTime": "2018-11-05 15:00:00",
+                    "endTime": "2018-11-05 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 60%。溫度攝氏27度。悶熱。東北風 平均風速<= 1級(每秒1公尺)。相對濕度95%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-03-01 15:00:00",
-                    "endTime": "2017-03-01 18:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏20度。 稍有寒意。 偏北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-05 18:00:00",
+                    "endTime": "2018-11-05 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 50%。溫度攝氏25度。舒適。東北風 平均風速<= 1級(每秒1公尺)。相對濕度98%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-03-01 03:00:00",
-                    "endTime": "2017-03-01 06:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏15度。 寒冷。 偏西風 平均風速1至2級(每秒2公尺)。 相對濕度為90%。"
+                    "startTime": "2018-11-05 21:00:00",
+                    "endTime": "2018-11-06 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 50%。溫度攝氏23度。舒適。偏東風 平均風速<= 1級(每秒1公尺)。相對濕度98%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-27 09:00:00",
-                    "endTime": "2017-02-27 12:00:00",
-                    "elementValue": "短暫雨。 降雨機率 80%。 溫度攝氏15度。 寒冷。 偏北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-06 00:00:00",
+                    "endTime": "2018-11-06 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 40%。溫度攝氏23度。舒適。東北風 平均風速<= 1級(每秒1公尺)。相對濕度98%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-03-01 12:00:00",
-                    "endTime": "2017-03-01 15:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏20度。 稍有寒意。 偏北風 平均風速2至3級(每秒5公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-06 03:00:00",
+                    "endTime": "2018-11-06 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 40%。溫度攝氏22度。舒適。偏北風 平均風速<= 1級(每秒1公尺)。相對濕度98%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-27 18:00:00",
-                    "endTime": "2017-02-27 21:00:00",
-                    "elementValue": "短暫雨。 降雨機率 80%。 溫度攝氏15度。 寒冷。 偏西風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-06 06:00:00",
+                    "endTime": "2018-11-06 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 40%。溫度攝氏22度。舒適。偏東風 平均風速<= 1級(每秒1公尺)。相對濕度98%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-03-01 21:00:00",
-                    "endTime": "2017-03-02 00:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏16度。 寒冷。 偏北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為85%。"
+                    "startTime": "2018-11-06 09:00:00",
+                    "endTime": "2018-11-06 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 40%。溫度攝氏25度。舒適。偏東風 平均風速<= 1級(每秒1公尺)。相對濕度98%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-28 03:00:00",
-                    "endTime": "2017-02-28 06:00:00",
-                    "elementValue": "短暫雨。 降雨機率 80%。 溫度攝氏15度。 寒冷。 西北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-06 12:00:00",
+                    "endTime": "2018-11-06 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 30%。溫度攝氏28度。悶熱。偏東風 平均風速<= 1級(每秒2公尺)。相對濕度94%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-03-01 09:00:00",
-                    "endTime": "2017-03-01 12:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏17度。 稍有寒意。 東北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為83%。"
+                    "startTime": "2018-11-06 15:00:00",
+                    "endTime": "2018-11-06 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 30%。溫度攝氏28度。悶熱。偏東風 平均風速<= 1級(每秒1公尺)。相對濕度92%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-27 15:00:00",
-                    "endTime": "2017-02-27 18:00:00",
-                    "elementValue": "短暫雨。 降雨機率 80%。 溫度攝氏16度。 寒冷。 西北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-06 18:00:00",
+                    "endTime": "2018-11-06 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 30%。溫度攝氏25度。舒適。偏南風 平均風速<= 1級(每秒2公尺)。相對濕度94%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-03-01 18:00:00",
-                    "endTime": "2017-03-01 21:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏18度。 稍有寒意。 偏北風 平均風速2至3級(每秒5公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-06 21:00:00",
+                    "endTime": "2018-11-07 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 30%。溫度攝氏24度。舒適。西南風 平均風速<= 1級(每秒1公尺)。相對濕度96%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-28 00:00:00",
-                    "endTime": "2017-02-28 03:00:00",
-                    "elementValue": "短暫雨。 降雨機率 80%。 溫度攝氏15度。 寒冷。 偏西風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-07 00:00:00",
+                    "endTime": "2018-11-07 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 30%。溫度攝氏23度。舒適。偏西風 平均風速<= 1級(每秒1公尺)。相對濕度96%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-03-02 03:00:00",
-                    "endTime": "2017-03-02 06:00:00",
-                    "elementValue": "短暫雨。 降雨機率 30%。 溫度攝氏14度。 寒冷。 偏北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為81%。"
+                    "startTime": "2018-11-07 03:00:00",
+                    "endTime": "2018-11-07 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 30%。溫度攝氏22度。舒適。西南風 平均風速<= 1級(每秒1公尺)。相對濕度97%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-28 09:00:00",
-                    "endTime": "2017-02-28 12:00:00",
-                    "elementValue": "短暫雨。 降雨機率 70%。 溫度攝氏16度。 寒冷。 偏北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為80%。"
+                    "startTime": "2018-11-07 06:00:00",
+                    "endTime": "2018-11-07 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 30%。溫度攝氏22度。舒適。偏南風 平均風速<= 1級(每秒1公尺)。相對濕度98%。",
+                        "measures": "NA"
+                      }
+                    ]
                   },
                   {
-                    "startTime": "2017-02-28 18:00:00",
-                    "endTime": "2017-02-28 21:00:00",
-                    "elementValue": "短暫雨。 降雨機率 60%。 溫度攝氏17度。 稍有寒意。 偏北風 平均風速小於1級(每秒<=1公尺)。 相對濕度為86%。"
+                    "startTime": "2018-11-07 09:00:00",
+                    "endTime": "2018-11-07 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫雨。降雨機率 30%。溫度攝氏26度。舒適。東南風 平均風速<= 1級(每秒2公尺)。相對濕度97%。",
+                        "measures": "NA"
+                      }
+                    ]
                   }
                 ]
               },
               {
                 "elementName": "PoP6h",
-                "elementMeasure": "%",
+                "description": "6小時降雨機率",
                 "time": [
                   {
-                    "startTime": "2017-03-02 00:00:00",
-                    "endTime": "2017-03-02 06:00:00",
-                    "elementValue": "30"
-                  },
-                  {
-                    "startTime": "2017-02-28 06:00:00",
-                    "endTime": "2017-02-28 12:00:00",
-                    "elementValue": "70"
-                  },
-                  {
-                    "startTime": "2017-03-01 12:00:00",
-                    "endTime": "2017-03-01 18:00:00",
-                    "elementValue": "30"
-                  },
-                  {
-                    "startTime": "2017-02-27 18:00:00",
-                    "endTime": "2017-02-28 00:00:00",
-                    "elementValue": "80"
-                  },
-                  {
-                    "startTime": "2017-03-01 00:00:00",
-                    "endTime": "2017-03-01 06:00:00",
-                    "elementValue": "30"
-                  },
-                  {
-                    "startTime": "2017-02-27 06:00:00",
-                    "endTime": "2017-02-27 12:00:00",
-                    "elementValue": "80"
-                  },
-                  {
-                    "startTime": "2017-02-28 12:00:00",
-                    "endTime": "2017-02-28 18:00:00",
-                    "elementValue": "30"
-                  },
-                  {
-                    "startTime": "2017-03-01 18:00:00",
-                    "endTime": "2017-03-02 00:00:00",
-                    "elementValue": "30"
-                  },
-                  {
-                    "startTime": "2017-02-28 00:00:00",
-                    "endTime": "2017-02-28 06:00:00",
-                    "elementValue": "80"
-                  },
-                  {
-                    "startTime": "2017-02-27 12:00:00",
-                    "endTime": "2017-02-27 18:00:00",
-                    "elementValue": "80"
-                  },
-                  {
-                    "startTime": "2017-03-01 06:00:00",
-                    "endTime": "2017-03-01 12:00:00",
-                    "elementValue": "30"
-                  },
-                  {
-                    "startTime": "2017-02-28 18:00:00",
-                    "endTime": "2017-03-01 00:00:00",
-                    "elementValue": "60"
-                  }
-                ]
-              },
-              {
-                "elementName": "Wind",
-                "time": [
-                  {
-                    "dataTime": "2017-03-01 15:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-04 12:00:00",
+                    "endTime": "2018-11-04 18:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
+                        "value": "20",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 18:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-04 18:00:00",
+                    "endTime": "2018-11-05 00:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
+                        "value": "50",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-27 21:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-05 00:00:00",
+                    "endTime": "2018-11-05 06:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "W",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏西風"
+                        "value": "40",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 21:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-05 06:00:00",
+                    "endTime": "2018-11-05 12:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "NE",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "東北風"
+                        "value": "60",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 00:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-05 12:00:00",
+                    "endTime": "2018-11-05 18:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "W",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏西風"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
+                        "value": "60",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-27 18:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-05 18:00:00",
+                    "endTime": "2018-11-06 00:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "W",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏西風"
+                        "value": "50",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-01 09:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-06 00:00:00",
+                    "endTime": "2018-11-06 06:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "東北風"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "NE",
-                        "parameterUnit": "16方位"
+                        "value": "40",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 12:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-06 06:00:00",
+                    "endTime": "2018-11-06 12:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "NE",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "東北風"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
+                        "value": "40",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-03-01 12:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-06 12:00:00",
+                    "endTime": "2018-11-06 18:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風速",
-                        "parameterValue": "5",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "3",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
+                        "value": "30",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 15:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-06 18:00:00",
+                    "endTime": "2018-11-07 00:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
+                        "value": "30",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-28 09:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-07 00:00:00",
+                    "endTime": "2018-11-07 06:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
+                        "value": "30",
+                        "measures": "百分比"
                       }
                     ]
                   },
                   {
-                    "dataTime": "2017-02-27 12:00:00",
-                    "elementValue": "",
-                    "parameter": [
+                    "startTime": "2018-11-07 06:00:00",
+                    "endTime": "2018-11-07 12:00:00",
+                    "elementValue": [
                       {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "NE",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "2",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "東北風"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "2",
-                        "parameterUnit": "m/s"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-03-02 00:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "9",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "5",
-                        "parameterUnit": "Beaufort"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-03-01 03:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏西風"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "W",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "2",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "2",
-                        "parameterUnit": "Beaufort"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-02-27 15:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "西北風"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "NW",
-                        "parameterUnit": "16方位"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-03-02 03:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-03-01 06:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "NE",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "2",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "東北風"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "2",
-                        "parameterUnit": "m/s"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-03-01 00:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "東北風"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "NE",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-02-28 03:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "西北風"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "NW",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-02-27 06:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "W",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏西風"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-03-01 18:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "3",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "5",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-02-28 06:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-02-27 09:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
-                      },
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
-                      }
-                    ]
-                  },
-                  {
-                    "dataTime": "2017-03-01 21:00:00",
-                    "elementValue": "",
-                    "parameter": [
-                      {
-                        "parameterName": "風級",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "Beaufort"
-                      },
-                      {
-                        "parameterName": "風向縮寫",
-                        "parameterValue": "N",
-                        "parameterUnit": "16方位"
-                      },
-                      {
-                        "parameterName": "風向描述",
-                        "parameterValue": "偏北風"
-                      },
-                      {
-                        "parameterName": "風速",
-                        "parameterValue": "<=1",
-                        "parameterUnit": "m/s"
+                        "value": "30",
+                        "measures": "百分比"
                       }
                     ]
                   }
@@ -1741,103 +1778,223 @@
               },
               {
                 "elementName": "Td",
-                "elementMeasure": "C",
+                "description": "露點溫度",
                 "time": [
                   {
-                    "dataTime": "2017-03-01 15:00:00",
-                    "elementValue": "15.0"
+                    "dataTime": "2018-11-04 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 18:00:00",
-                    "elementValue": "14.0"
+                    "dataTime": "2018-11-04 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "25",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 21:00:00",
-                    "elementValue": "12.0"
+                    "dataTime": "2018-11-04 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "23",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 21:00:00",
-                    "elementValue": "14.0"
+                    "dataTime": "2018-11-04 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 00:00:00",
-                    "elementValue": "11.0"
+                    "dataTime": "2018-11-05 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 18:00:00",
-                    "elementValue": "12.0"
+                    "dataTime": "2018-11-05 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 09:00:00",
-                    "elementValue": "14.0"
+                    "dataTime": "2018-11-05 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "20",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 12:00:00",
-                    "elementValue": "14.0"
+                    "dataTime": "2018-11-05 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "21",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 12:00:00",
-                    "elementValue": "15.0"
+                    "dataTime": "2018-11-05 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "24",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 15:00:00",
-                    "elementValue": "15.0"
+                    "dataTime": "2018-11-05 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 09:00:00",
-                    "elementValue": "12.0"
+                    "dataTime": "2018-11-05 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "24",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-02 00:00:00",
-                    "elementValue": "12.0"
+                    "dataTime": "2018-11-05 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "23",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 12:00:00",
-                    "elementValue": "13.0"
+                    "dataTime": "2018-11-06 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "23",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 03:00:00",
-                    "elementValue": "13.0"
+                    "dataTime": "2018-11-06 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-02 03:00:00",
-                    "elementValue": "11.0"
+                    "dataTime": "2018-11-06 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 15:00:00",
-                    "elementValue": "13.0"
+                    "dataTime": "2018-11-06 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "25",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 06:00:00",
-                    "elementValue": "13.0"
+                    "dataTime": "2018-11-06 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "27",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 00:00:00",
-                    "elementValue": "14.0"
+                    "dataTime": "2018-11-06 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "26",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 03:00:00",
-                    "elementValue": "11.0"
+                    "dataTime": "2018-11-06 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "24",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 06:00:00",
-                    "elementValue": "11.0"
+                    "dataTime": "2018-11-06 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "23",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 18:00:00",
-                    "elementValue": "14.0"
+                    "dataTime": "2018-11-07 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-28 06:00:00",
-                    "elementValue": "11.0"
+                    "dataTime": "2018-11-07 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-02-27 09:00:00",
-                    "elementValue": "12.0"
+                    "dataTime": "2018-11-07 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "22",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   },
                   {
-                    "dataTime": "2017-03-01 21:00:00",
-                    "elementValue": "13.0"
+                    "dataTime": "2018-11-07 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "25",
+                        "measures": "攝氏度"
+                      }
+                    ]
                   }
                 ]
               }

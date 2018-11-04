@@ -109,8 +109,7 @@ type ForecastTownshipsWeather struct {
 	Success string `json:"success"`
 	Result  Result `json:"result"`
 	Records struct {
-		ContentDescription string               `json:"contentDescription"`
-		Locations          []FTWCountryLocation `json:"locations"`
+		Locations []FTWCountryLocation `json:"locations"`
 	} `json:"records"`
 }
 
@@ -130,17 +129,23 @@ type FTWDatasetLocation struct {
 }
 
 type FTWWeatherElement struct {
+	Description    *string   `json:"description,omitempty"`
 	ElementName    string    `json:"elementName"`
 	ElementMeasure *string   `json:"elementMeasure,omitempty"`
 	Time           []FTWTime `json:"time"`
 }
 
 type FTWTime struct {
-	DataTime     *string     `json:"dataTime,omitempty"`
-	StartTime    *string     `json:"startTime,omitempty"`
-	EndTime      *string     `json:"endTime,omitempty"`
-	ElementValue *string     `json:"elementValue,omitempty"`
-	Parameter    []Parameter `json:"parameter,omitempty"`
+	DataTime     *string           `json:"dataTime,omitempty"`
+	StartTime    *string           `json:"startTime,omitempty"`
+	EndTime      *string           `json:"endTime,omitempty"`
+	ElementValue []FTWElementValue `json:"elementValue,omitempty"`
+	Parameter    []Parameter       `json:"parameter,omitempty"`
+}
+
+type FTWElementValue struct {
+	Value    string `json:"value"`
+	Measures string `json:"measures"`
 }
 
 // GetTownshipsWeatherByCity gets townships forecasts by data Id.
