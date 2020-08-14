@@ -14,7 +14,11 @@ jobs:
 script:
   - diff -u <(echo -n) <(gofmt -d -s .)
   - go vet $(go list ./... | grep -v /vendor/)
-  - ./go.test.sh
+  - make test
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+notifications:
+  email:
+    on_success: never
