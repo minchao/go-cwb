@@ -104,7 +104,7 @@ func (c *Client) Do(ctx context.Context, req *http.Request, v interface{}) (*htt
 
 	if v != nil {
 		if w, ok := v.(io.Writer); ok {
-			io.Copy(w, resp.Body)
+			_, _ = io.Copy(w, resp.Body)
 		} else {
 			err = decodeResponse(resp.Body, v)
 		}

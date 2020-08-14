@@ -6,6 +6,11 @@ help:
 	@echo "Usage:"
 	@sed -n 's/^##//p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/ /'
 
+.PHONY: lint
+## lint: run linters
+lint:
+	golangci-lint run
+
 .PHONY: test
 ## test: run unit tests
 test:

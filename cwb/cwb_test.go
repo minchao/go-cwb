@@ -54,7 +54,7 @@ func testFormValues(t *testing.T, r *http.Request, values values) {
 		want.Add(k, v)
 	}
 
-	r.ParseForm()
+	_ = r.ParseForm()
 	if got := r.Form; !reflect.DeepEqual(got, want) {
 		t.Errorf("Request parameters is %v, want %v", got, want)
 	}
@@ -122,12 +122,12 @@ func TestClient_Do(t *testing.T) {
 		if m := "GET"; m != r.Method {
 			t.Errorf("Request method is %v, want %v", r.Method, m)
 		}
-		fmt.Fprint(w, `{"Hello":"世界"}`)
+		_, _ = fmt.Fprint(w, `{"Hello":"世界"}`)
 	})
 
 	req, _ := client.NewRequest("GET", "/", nil)
 	body := new(foo)
-	client.Do(context.Background(), req, body)
+	_, _ = client.Do(context.Background(), req, body)
 
 	want := &foo{"世界"}
 	if !reflect.DeepEqual(body, want) {

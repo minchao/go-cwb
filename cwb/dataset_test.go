@@ -15,7 +15,7 @@ func TestDatasetService_GetIds(t *testing.T) {
 		testMethod(t, r, "GET")
 
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte(`{"dataid":["F-A0021-001","F-C0032-001","O-A0017-001"]}`))
+		_, _ = w.Write([]byte(`{"dataid":["F-A0021-001","F-C0032-001","O-A0017-001"]}`))
 	})
 
 	want := &Dataset{
@@ -43,7 +43,7 @@ func TestDatasetService_GetData(t *testing.T) {
 		testMethod(t, r, "GET")
 
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte(`{
+		_, _ = w.Write([]byte(`{
   "cwbCategory": "1",
   "datanamefixid": "2",
   "title": "3",

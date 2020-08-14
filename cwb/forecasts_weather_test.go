@@ -24,7 +24,7 @@ func TestForecastsService_Get36HourWeather(t *testing.T) {
 		})
 
 		w.WriteHeader(http.StatusOK)
-		w.Write(testdata)
+		_, _ = w.Write(testdata)
 	})
 
 	got, _, err := client.Forecasts.Get36HourWeather(context.Background(),
@@ -35,7 +35,7 @@ func TestForecastsService_Get36HourWeather(t *testing.T) {
 	}
 
 	restored, _ := json.Marshal(got)
-	areEqual, err := areEqualJSON(testdata, restored)
+	areEqual, _ := areEqualJSON(testdata, restored)
 	if !areEqual {
 		t.Error("Forecasts.Get36HourWeather testdata and restored are not equal")
 	}
@@ -55,7 +55,7 @@ func TestForecastsService_GetTownshipsWeatherByDataId(t *testing.T) {
 		})
 
 		w.WriteHeader(http.StatusOK)
-		w.Write(testdata)
+		_, _ = w.Write(testdata)
 	})
 
 	got, _, err := client.Forecasts.GetTownshipsWeatherByDataId(context.Background(),
@@ -67,7 +67,7 @@ func TestForecastsService_GetTownshipsWeatherByDataId(t *testing.T) {
 	}
 
 	restored, _ := json.Marshal(got)
-	areEqual, err := areEqualJSON(testdata, restored)
+	areEqual, _ := areEqualJSON(testdata, restored)
 	if !areEqual {
 		t.Error("Forecasts.GetTownshipsWeatherByDataId testdata and restored are not equal")
 	}
@@ -89,7 +89,7 @@ func TestForecastsService_GetTownshipsWeatherByLocations(t *testing.T) {
 		})
 
 		w.WriteHeader(http.StatusOK)
-		w.Write(testdata)
+		_, _ = w.Write(testdata)
 	})
 
 	got, _, err := client.Forecasts.GetTownshipsWeatherByLocations(context.Background(),
@@ -101,7 +101,7 @@ func TestForecastsService_GetTownshipsWeatherByLocations(t *testing.T) {
 	}
 
 	restored, _ := json.Marshal(got)
-	areEqual, err := areEqualJSON(testdata, restored)
+	areEqual, _ := areEqualJSON(testdata, restored)
 	if !areEqual {
 		t.Error("Forecasts.GetTownshipsWeatherByLocations testdata and restored are not equal")
 	}

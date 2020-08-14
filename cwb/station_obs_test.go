@@ -23,7 +23,7 @@ func TestStationObsService_GetWeather(t *testing.T) {
 		})
 
 		w.WriteHeader(http.StatusOK)
-		w.Write(testdata)
+		_, _ = w.Write(testdata)
 	})
 
 	options := url.Values{}
@@ -36,7 +36,7 @@ func TestStationObsService_GetWeather(t *testing.T) {
 
 	restored, _ := json.Marshal(got)
 
-	areEqual, err := areEqualJSON(testdata, restored)
+	areEqual, _ := areEqualJSON(testdata, restored)
 	if !areEqual {
 		t.Error("StationObs.GetWeather testdata and restored are not equal")
 	}
@@ -55,7 +55,7 @@ func TestStationObsService_GetRainfall(t *testing.T) {
 		})
 
 		w.WriteHeader(http.StatusOK)
-		w.Write(testdata)
+		_, _ = w.Write(testdata)
 	})
 
 	options := url.Values{}
@@ -68,7 +68,7 @@ func TestStationObsService_GetRainfall(t *testing.T) {
 
 	restored, _ := json.Marshal(got)
 
-	areEqual, err := areEqualJSON(testdata, restored)
+	areEqual, _ := areEqualJSON(testdata, restored)
 	if !areEqual {
 		t.Error("StationObs.GetRainfall testdata and restored are not equal")
 	}
