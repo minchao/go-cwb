@@ -15,3 +15,8 @@ lint:
 ## test: run unit tests
 test:
 	go test -v -race -coverprofile=coverage.txt -covermode=atomic ./...
+
+.PHONY: cover
+## cover: open a browser and displaying coverage profile
+cover:
+	go tool cover -html=coverage.txt

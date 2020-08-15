@@ -20,7 +20,7 @@ go get github.com/minchao/go-cwb
 import "github.com/minchao/go-cwb/cwb"
 ```
 
-You will need an account on [cwb.gov.tw](http://www.cwb.gov.tw/) to get an API key.
+You will need an account on opendata.cwb.gov.tw to get an API key.
 
 Construct a new CWB client, then use to access the CWB API.
 For example:
@@ -55,13 +55,14 @@ forecast, _, err := client.Forecasts.GetTownshipsWeatherByDataId(context.Backgro
 
 ## Implemented APIs
 
-* 一般天氣預報-今明36小時天氣預報 (F-C0032-001)
-* 鄉鎮天氣預報-單一鄉鎮市區預報資料 (F-D0047-001 - F-D0047-091)
-* 鄉鎮天氣預報-全臺灣各鄉鎮市區預報資料 (F-D0047-093) 
-* 自動氣象站-氣象觀測資料 (O-A0001-001)
-* 自動雨量站-雨量觀測資料 (O-A0002-001)
+* 一般天氣預報 - 今明 36 小時天氣預報 (F-C0032-001)
+* 鄉鎮天氣預報 - 單一鄉鎮市區預報資料 (F-D0047-001 - F-D0047-091)
+* 鄉鎮天氣預報 - 全臺灣各鄉鎮市區預報資料 (F-D0047-093)
+* 自動氣象站 - 氣象觀測資料 (O-A0001-001)
+* 自動雨量站 - 雨量觀測資料 (O-A0002-001)
+* 潮汐預報 - 未來 1 個月潮汐預報（F-A0021-001）
 
-[CWB Open data API documentation Version 1.2](http://opendata.cwb.gov.tw/opendatadoc/CWB_Opendata_API_V1.2.pdf)
+[CWB Open data API documentation](https://opendata.cwb.gov.tw/dist/opendata-swagger.html#/)
 
 ## License
 

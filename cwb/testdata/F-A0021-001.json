@@ -1,0 +1,107 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "F-A0021-001",
+    "fields": [
+      {
+        "id": "locationName",
+        "type": "String"
+      },
+      {
+        "id": "elementName",
+        "type": "String"
+      },
+      {
+        "id": "elementValue",
+        "type": "String"
+      },
+      {
+        "id": "stationId",
+        "type": "String"
+      },
+      {
+        "id": "parameterName",
+        "type": "String"
+      },
+      {
+        "id": "parameterValue",
+        "type": "String"
+      },
+      {
+        "id": "parameterUnit",
+        "type": "String"
+      },
+      {
+        "id": "parameterMeasure",
+        "type": "String"
+      },
+      {
+        "id": "dataTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "startTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "endTime",
+        "type": "Timestamp"
+      }
+    ]
+  },
+  "records": {
+    "dataid": "F-A0021-001",
+    "note": "潮汐預報(未來1個月潮汐預報，鄉鎮、大潮小潮、滿潮乾潮、時間、潮高)",
+    "location": [
+      {
+        "locationName": "宜蘭縣南澳鄉",
+        "stationId": "000212",
+        "validTime": [
+          {
+            "startTime": "2020-08-19 00:00:00",
+            "endTime": "2020-08-20 00:00:00",
+            "weatherElement": [
+              {
+                "elementName": "農曆",
+                "elementValue": "7/1"
+              },
+              {
+                "elementName": "潮差",
+                "elementValue": "大"
+              },
+              {
+                "elementName": "1日潮汐",
+                "time": [
+                  {
+                    "dataTime": "2020-08-19 05:48:00",
+                    "parameter": [
+                      {
+                        "parameterName": "潮汐",
+                        "parameterValue": "滿潮"
+                      },
+                      {
+                        "parameterName": "潮高(TWVD)",
+                        "parameterValue": "111",
+                        "parameterMeasure": "cm"
+                      },
+                      {
+                        "parameterName": "潮高(當地)",
+                        "parameterValue": "108",
+                        "parameterMeasure": "cm"
+                      },
+                      {
+                        "parameterName": "潮高(相對海圖)",
+                        "parameterValue": "225",
+                        "parameterMeasure": "cm"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -31,9 +31,10 @@ type Client struct {
 	common service // Reuse a single struct instead of allocating one for each service on the heap.
 
 	// Services
-	Dataset    *DatasetService
-	Forecasts  *ForecastsService
-	StationObs *StationObsService
+	Dataset       *DatasetService
+	Forecasts     *ForecastsService
+	StationObs    *StationObsService
+	TideForecasts *TideForecastsService
 }
 
 // NewClient returns a new CWB API client. The token are required for authentication.
@@ -55,6 +56,7 @@ func NewClient(token string, httpClient *http.Client) *Client {
 	c.Dataset = (*DatasetService)(&c.common)
 	c.Forecasts = (*ForecastsService)(&c.common)
 	c.StationObs = (*StationObsService)(&c.common)
+	c.TideForecasts = (*TideForecastsService)(&c.common)
 	return c
 }
 
