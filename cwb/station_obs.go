@@ -44,7 +44,7 @@ type StationObsElement struct {
 	ElementValue string `json:"elementValue"`
 }
 
-// GetWeatherObs gets weather observation data.
+// GetWeather gets weather observation data.
 func (s *StationObsService) GetWeather(ctx context.Context, options url.Values) (*StationObsWeather, *http.Response, error) {
 	obs := new(StationObsWeather)
 	req, err := s.client.Get(ctx, s.client.generateURL(StationObsWeatherId, options), obs)

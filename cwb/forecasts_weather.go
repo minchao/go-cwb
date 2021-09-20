@@ -95,7 +95,7 @@ type F36HWTime struct {
 	Parameter Parameter `json:"parameter"`
 }
 
-// GetForecasts gets 36 hour weather forecasts.
+// Get36HourWeather gets 36-hour weather forecasts.
 func (s *ForecastsService) Get36HourWeather(ctx context.Context, locationNames, elements []string) (*Forecast36HourWeather, *http.Response, error) {
 	forecast := new(Forecast36HourWeather)
 	req, err := s.client.Get(ctx, s.generateURL(F36HW, nil, locationNames, elements), forecast)
@@ -148,7 +148,7 @@ type FTWElementValue struct {
 	Measures string `json:"measures"`
 }
 
-// GetTownshipsWeatherByCity gets townships forecasts by data Id.
+// GetTownshipsWeatherByDataId gets townships forecasts by data Id.
 // See http://opendata.cwb.gov.tw/datalist for dataId (F-D0047-001 - F-D0047-091).
 func (s *ForecastsService) GetTownshipsWeatherByDataId(ctx context.Context, dataId string, locationNames, elements []string) (*ForecastTownshipsWeather, *http.Response, error) {
 	forecast := new(ForecastTownshipsWeather)
