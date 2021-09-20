@@ -35,13 +35,24 @@ type StationObsLocation struct {
 	Time         struct {
 		ObsTime string `json:"obsTime"`
 	} `json:"time"`
-	WeatherElement []StationObsElement `json:"weatherElement"`
-	Parameter      []Parameter         `json:"parameter"`
+	WeatherElement StationObsElements `json:"weatherElement"`
+	Parameter      []Parameter        `json:"parameter"`
 }
 
 type StationObsElement struct {
 	ElementName  string `json:"elementName"`
 	ElementValue string `json:"elementValue"`
+}
+
+type StationObsElements []StationObsElement
+
+func (es StationObsElements) GetByName(name string) (StationObsElement, error) {
+	for _, element := range es {
+		if element.ElementName == name {
+			return element, nil
+		}
+	}
+	return StationObsElement{}, ErrElementNotFound
 }
 
 // GetWeather gets weather observation data.

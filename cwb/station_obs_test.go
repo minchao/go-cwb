@@ -10,6 +10,33 @@ import (
 	"testing"
 )
 
+func TestStationObsElements_GetByName(t *testing.T) {
+	elements := StationObsElements{
+		{
+			ElementName:  "TEMP",
+			ElementValue: "5.9",
+		},
+	}
+
+	element, err := elements.GetByName("TEMP")
+	if err != nil {
+		t.Errorf("StationObsElements.GetByName returned err: %v", err)
+	}
+
+	if element.ElementName != "TEMP" {
+		t.Error("StationObsElements.GetByName testdata and restored are not equal")
+	}
+}
+
+func TestStationObsElements_GetByName_notFound(t *testing.T) {
+	elements := StationObsElements{}
+
+	_, err := elements.GetByName("TEMP")
+	if err != ErrElementNotFound {
+		t.Errorf("StationObsElements.GetByName should return ErrElementNotFound")
+	}
+}
+
 func TestStationObsService_GetWeather(t *testing.T) {
 	setup()
 	defer teardown()
