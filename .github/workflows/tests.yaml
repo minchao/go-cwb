@@ -1,0 +1,30 @@
+name: Tests
+on:
+  push: { }
+  workflow_dispatch: { }
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: golangci/golangci-lint-action@v2
+        with:
+          version: v1.42
+  test:
+    strategy:
+      matrix:
+        go-version:
+          - 1.x
+          - 1.15.x
+          - 1.16.x
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go-version }}
+      - run: make test
+      - uses: codecov/codecov-action@v2
+        if: matrix.go-version == '1.16.x'
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
