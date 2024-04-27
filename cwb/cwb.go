@@ -147,7 +147,7 @@ func checkResponse(r *http.Response) error {
 
 	errorResponse := &ErrorResponse{Response: r, Message: "unknown"}
 	switch r.StatusCode {
-	case http.StatusUnauthorized, http.StatusNotFound:
+	case http.StatusUnauthorized, http.StatusNotFound, http.StatusInternalServerError:
 		data, err := ioutil.ReadAll(r.Body)
 		if err != nil {
 			errorResponse.Message = fmt.Sprintf("reading body, %s", err.Error())
