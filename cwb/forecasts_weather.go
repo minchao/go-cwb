@@ -149,7 +149,7 @@ type FTWElementValue struct {
 }
 
 // GetTownshipsWeatherByDataId gets townships forecasts by data Id.
-// See http://opendata.cwb.gov.tw/datalist for dataId (F-D0047-001 - F-D0047-091).
+// See http://opendata.cwa.gov.tw/datalist for dataId (F-D0047-001 - F-D0047-091).
 func (s *ForecastsService) GetTownshipsWeatherByDataId(ctx context.Context, dataId string, locationNames, elements []string) (*ForecastTownshipsWeather, *http.Response, error) {
 	forecast := new(ForecastTownshipsWeather)
 	req, err := s.client.Get(ctx, s.generateURL(dataId, nil, locationNames, elements), forecast)

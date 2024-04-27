@@ -4,7 +4,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/minchao/go-cwb)](https://goreportcard.com/report/github.com/minchao/go-cwb)
 [![codecov](https://codecov.io/gh/minchao/go-cwb/branch/master/graph/badge.svg)](https://codecov.io/gh/minchao/go-cwb)
 
-An unofficial Taiwan [Central Weather Bureau RESTful API](http://opendata.cwb.gov.tw/) library for Go.
+An unofficial Taiwan [Central Weather Bureau RESTful API](http://opendata.cwa.gov.tw/) library for Go.
 
 This package is inspired by [go-github](https://github.com/google/go-github).
 
@@ -20,7 +20,7 @@ go get github.com/minchao/go-cwb
 import "github.com/minchao/go-cwb/cwb"
 ```
 
-You will need an account on opendata.cwb.gov.tw to get an API key.
+You will need an account on opendata.cwa.gov.tw to get an API key.
 
 Construct a new CWB client, then use to access the CWB API.
 For example:
@@ -62,7 +62,7 @@ forecast, _, err := client.Forecasts.GetTownshipsWeatherByDataId(context.Backgro
 * 自動雨量站 - 雨量觀測資料 (O-A0002-001)
 * 潮汐預報 - 未來 1 個月潮汐預報（F-A0021-001）
 
-[CWB Open data API documentation](https://opendata.cwb.gov.tw/dist/opendata-swagger.html#/)
+[CWB Open data API documentation](https://opendata.cwa.gov.tw/dist/opendata-swagger.html#/)
 
 ## License
 

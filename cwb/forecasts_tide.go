@@ -17,7 +17,7 @@ type TideForecastsService service
 type TideForecast1MonthOptions struct {
 	Limit        int    `url:"limit,omitempty"`
 	Offset       int    `url:"offset,omitempty"`
-	LocationName string `url:"locationName,omitempty"` // see https://opendata.cwb.gov.tw/opendatadoc/MMC/A0021-001.pdf
+	LocationName string `url:"locationName,omitempty"` // see https://opendata.cwa.gov.tw/opendatadoc/MMC/A0021-001.pdf
 	ElementName  string `url:"elementName,omitempty"`
 	Sort         string `url:"sort,omitempty"`
 	StartTime    string `url:"startTime,omitempty"`
@@ -64,7 +64,7 @@ type TideForecastParameter struct {
 }
 
 // Get1MonthTide gets 1 month tide forecasts.
-// see https://opendata.cwb.gov.tw/dist/opendata-swagger.html#/%E9%A0%90%E5%A0%B1/get_v1_rest_datastore_F_A0021_001
+// see https://opendata.cwa.gov.tw/dist/opendata-swagger.html#/%E9%A0%90%E5%A0%B1/get_v1_rest_datastore_F_A0021_001
 func (s *TideForecastsService) Get1MonthTide(ctx context.Context, options TideForecast1MonthOptions) (*TideForecast1MonthResponse, *http.Response, error) {
 	values, _ := query.Values(options)
 	forecast := new(TideForecast1MonthResponse)
