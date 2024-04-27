@@ -1,6 +1,6 @@
 # go-cwb
 
-[![Build Status](https://travis-ci.org/minchao/go-cwb.svg?branch=master)](https://travis-ci.org/minchao/go-cwb)
+[![Tests](https://github.com/minchao/go-cwb/actions/workflows/tests.yaml/badge.svg)](https://github.com/minchao/go-cwb/actions/workflows/tests.yaml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/minchao/go-cwb)](https://goreportcard.com/report/github.com/minchao/go-cwb)
 [![codecov](https://codecov.io/gh/minchao/go-cwb/branch/master/graph/badge.svg)](https://codecov.io/gh/minchao/go-cwb)
 
